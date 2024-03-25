@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="splash.png" />
+    <link rel="stylesheet" href="holi.css" />
+    <title>Happy Holi</title>
+  </head>
+  <body>
+    <section class="happy">
+      <img src="splash.png" alt="" id="splash" />
+      <img src="text.png" alt="" id="txt" />
+      <img src="color1.png" alt="" id="c1" />
+      <img src="color2.png" alt="" id="c2" />
+      <img src="baloon1.png" alt="" id="b1" />
+      <img src="baloon2.png" alt="" id="b2" />
+      <img src="baloon3.png" alt="" id="b3" />
+      <img src="decoration1.png" alt="" id="d1" />
+      <img src="decoration2.png" alt="" id="d2" />
+      <img src="watergun1.png" alt="" id="w1" />
+      <img src="watergun2.png" alt="" id="w2" />
+    </section>
+
+    <article class="para">
+      <h1>Dear Friends,</h1>
+      <h1>
+        “Wishing you a Holi filled with sweet moments and colorful memories to
+        cherish forever. <br />
+        Happy Holi!”
+      </h1>
+    </article>
+  </body>
+  <script>
+    let spalsh = document.getElementById("splash");
+    let text = document.getElementById("txt");
+    let c1 = document.getElementById("c1");
+    let c2 = document.getElementById("c2");
+    let b1 = document.getElementById("b1");
+    let b2 = document.getElementById("b2");
+    let b3 = document.getElementById("b3");
+    let d1 = document.getElementById("d1");
+    let d2 = document.getElementById("d2");
+    let w1 = document.getElementById("w1");
+    let w2 = document.getElementById("w2");
+
+    window.addEventListener("scroll", function () {
+      let value = window.scrollY;
+      spalsh.style.top = value * 0.75 + "px";
+      text.style.top = value * 0.25 + "px";
+      c1.style.top = value * -0.25 + "px";
+      b1.style.top = value * -0.25 + "px";
+      b2.style.top = value * -0.25 + "px";
+      b3.style.top = value * 0.25 + "px";
+      w1.style.right = value * 0.25 + "px";
+      w2.style.left = value * 0.25 + "px";
+    });
+  </script>
+</html>

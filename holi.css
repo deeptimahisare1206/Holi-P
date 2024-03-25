@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #301040 url(bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* line-height: 3rem; */
+}
+.para {
+  color: white;
+  position: relative;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+h1 {
+  font-size: 6rem;
+  filter: drop-shadow(5px 5px 1px black);
+  font-family: cursive;
+}
+.happy {
+  height: 100vh;
+}
+.happy img {
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+}
